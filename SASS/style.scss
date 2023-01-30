@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  // margin-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 20px;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @mixin input-general($padding, $border, $bb, $fontsize, $outline) {
+    padding: $padding;
+    border: $border;
+    border-bottom: $bb;
+    font-size: $fontsize;
+    outline: $outline;
+  }
+  form {
+    input {
+      font-size: 22px;
+      outline: none;
+      padding: 7px 22px;
+      border: none;
+      border-bottom: 2px solid rgb(128, 118, 118);
+    }
+    .bb-green {
+      border-bottom: 3px solid green;
+    }
+    .bb-red {
+      border-bottom: 3px solid red;
+    }
+  }
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  p {
+    color: red;
+    font-size: 18px;
+  }
+  i {
+    color: red;
+    font-size: 20px;
+  }
+}
+.box3 {
+  form {
+    input {
+      padding: 7px 22px;
+      font-size: 22px;
+      border: none;
+      border-bottom: 2px dashed rgb(128, 118, 118);
+      outline: none;
+    }
+  }
+}
